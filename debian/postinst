@@ -21,6 +21,7 @@ set -e
 case "$1" in
     configure)
 	    cp /usr/share/snapd-fix/* /var/lib/n4d/oneshot
+	    chmod +x /var/lib/n4d/oneshot/snapd-fix
 	    ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
