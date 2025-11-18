@@ -1,0 +1,10 @@
+#!/bin/bash
+systemctl stop snapd || true
+[ -e /snap ] || mkdir /snap
+snap disable chromium || true
+snap disable core22 || true
+snap disable snapd || true
+snap enable core22 || true
+snap enable snapd || true
+snap enable chromium || true
+
