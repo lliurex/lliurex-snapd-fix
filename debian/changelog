@@ -1,3 +1,9 @@
+lliurex-snapd-fixes (0.2.1) jammy; urgency=medium
+
+  * Fix install path
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 18 Nov 2025 16:32:02 +0100
+
 lliurex-snapd-fixes (0.2) jammy; urgency=medium
 
   * Move to n4d oneshot 
