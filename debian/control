@@ -14,3 +14,10 @@ Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Fix snap configuration by oem mode 
  Reconfigure snap and apply patches for oem mode 
+
+Package: lliurex-snapd-update-fix
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: snapd (>=2.72+ubuntu22.04)
+Description: Fix snap configuration by oem mode 
+ Reconfigure snap and apply patches for oem mode 
