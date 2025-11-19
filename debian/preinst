@@ -19,6 +19,8 @@ case "$1" in
 	    systemctl stop snapd.service || true
 	    systemctl stop snapd.socket || true
 	    [ -e /snap ] || mkdir /snap
+	    systemctl stop snapd.service || true
+	    systemctl stop snapd.socket || true
 	    snap disable chromium || true
 	    snap disable core22 || true
 	    snap disable snapd || true
