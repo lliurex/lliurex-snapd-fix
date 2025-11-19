@@ -22,6 +22,7 @@ case "$1" in
     configure)
 	    cp /usr/share/snapd-fix/* /var/lib/n4d/oneshot
 	    chmod +x /var/lib/n4d/oneshot/snapd-fix
+	    n4d-client -k $(cat /etc/n4d/key) call execute_oneshots "[\""$(cat /etc/n4d/key)"\"]" || true
 	    ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
