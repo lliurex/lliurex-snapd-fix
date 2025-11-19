@@ -1,3 +1,9 @@
+lliurex-snapd-fixes (0.3) jammy; urgency=medium
+
+  * test
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 19 Nov 2025 09:35:31 +0100
+
 lliurex-snapd-fixes (0.1) jammy; urgency=medium
 
   * Initial Release.

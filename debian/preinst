@@ -16,7 +16,8 @@ set -e
 
 case "$1" in
     install)
-	    systemctl stop snapd || true
+	    systemctl stop snapd.service || true
+	    systemctl stop snapd.socket || true
 	    [ -e /snap ] || mkdir /snap
 	    snap disable chromium || true
 	    snap disable core22 || true
