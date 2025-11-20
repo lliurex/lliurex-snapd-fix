@@ -1,3 +1,9 @@
+lliurex-snapd-fixes (0.2.5) jammy; urgency=medium
+
+  * Patch more smart
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 20 Nov 2025 11:49:02 +0100
+
 lliurex-snapd-fixes (0.2.4) jammy; urgency=medium
 
   * Apply patch without reboot 
