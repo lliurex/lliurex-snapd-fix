@@ -1,3 +1,9 @@
+lliurex-snapd-fixes (0.2.6) jammy; urgency=medium
+
+  * fix grep
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 20 Nov 2025 12:07:41 +0100
+
 lliurex-snapd-fixes (0.2.5) jammy; urgency=medium
 
   * Patch more smart
