@@ -1,3 +1,9 @@
+lliurex-snapd-fixes (0.2.7) jammy; urgency=medium
+
+  * fix auto-upgrade tags
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 20 Nov 2025 12:14:36 +0100
+
 lliurex-snapd-fixes (0.2.6) jammy; urgency=medium
 
   * fix grep
