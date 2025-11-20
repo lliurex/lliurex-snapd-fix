@@ -1,3 +1,9 @@
+lliurex-snapd-fixes (0.2.8) jammy; urgency=medium
+
+  * Hide errors when n4d is down
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 20 Nov 2025 13:45:55 +0100
+
 lliurex-snapd-fixes (0.2.7) jammy; urgency=medium
 
   * fix auto-upgrade tags
