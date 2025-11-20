@@ -17,5 +17,5 @@ if [ "$rc" = 1 ]; then
 		snap enable $line
 	done < <(tac /tmp/snap_packages_to_fix)
 	rm /tmp/snap_packages_to_fix || true
-	touch /etc/lliurex-auto-upgrades/tags/software.snap-chromium-fix
+	touch /etc/lliurex-auto-upgrade/tags/software.snap-chromium-fix
 fi
