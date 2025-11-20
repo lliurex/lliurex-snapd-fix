@@ -1,10 +1,21 @@
 #!/bin/bash
-systemctl stop snapd || true
-[ -e /snap ] || mkdir /snap
-snap disable chromium || true
-snap disable core22 || true
-snap disable snapd || true
-snap enable core22 || true
-snap enable snapd || true
-snap enable chromium || true
 
+rc=0
+rc=$(snap list | grep "chromium" && echo 1)
+
+if [ "$rc" = 1 ]; then
+	[ ! -e /snap ] || exit 0
+	systemctl stop snapd || true
+	[ -e /snap ] || mkdir /snap
+	echo "chromium" > /tmp/snap_packages_to_fix
+	snap list | grep core | awk '{print $1}' >> /tmp/snap_packages_to_fix
+	echo "snapd" >> /tmp/snap_packages_to_fix
+	while read line; do
+		snap disable $line
+	done < /tmp/snap_packages_to_fix
+	while read line; do
+		snap enable $line
+	done < <(tac /tmp/snap_packages_to_fix)
+	rm /tmp/snap_packages_to_fix || true
+	touch /etc/lliurex-auto-upgrades/tags/software.snap-chromium-fix
+fi
